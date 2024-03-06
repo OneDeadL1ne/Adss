@@ -3,42 +3,22 @@ import { useRef } from "react";
 export default function Layout() {
     const gamesRef = useRef<HTMLDivElement | null>(null);
     return (
-        <div className="max-w-3xl mx-auto px-6 my-6">
-            <nav className="flex justify-end top-2 fixed right-6">
-                <p>
-                    <button
-                        className="btn"
-                        onClick={() => {
-                            // Basic jumping to the top of the page
-                            // Note: the x value is 0 here
-                            // window.scrollBy(0, window.innerHeight)
-
-                            // Jumping to the top of the page with smooth scrolling
-                            window.scrollBy({
-                                top: window.innerHeight,
-                                behavior: "smooth",
-                            });
-                        }}
-                    >
-                        Next Page
-                    </button>
-                </p>
-            </nav>
-
-            <h1 className="text-3xl font-bold mb-4">Top Games of 2023</h1>
-
-            <p className="italic mb-6 text-slate-500">
-                <em>
-                    Art from{" "}
-                    <a className="underline" href="https://www.giantbomb.com/">
-                        Giant Bomb
+        <div className=" ">
+            <div className="bg-[#65646A] text-white">
+                <div className=" max-w-7xl ml-auto mr-auto pt-2 pb-5 @container">
+                    <a className="text-3xl font-bold mr-5">ADSSCODE</a>
+                    <a className="mr-5 inline-flex @[900px]:hidden">О нас</a>
+                    <a className="hidden @[1080px]:inline-flex mr-5 ">
+                        Наши услуги
+                    </a>{" "}
+                    <a className="mr-5">Портфолио</a>{" "}
+                    <a className="mr-5">Контакты</a>
+                    <a className="float-right mt-3">
+                        <a className="mr-5">Связаться с нами</a>
+                        <a className="mr-5">Заказать звонок</a>{" "}
                     </a>
-                    , descriptions from{" "}
-                    <a className="underline" href="https://www.wikipedia.org/">
-                        Wikipedia
-                    </a>
-                </em>
-            </p>
+                </div>
+            </div>
 
             <p className="flex gap-4 mb-6">
                 {/* Using a fragment */}

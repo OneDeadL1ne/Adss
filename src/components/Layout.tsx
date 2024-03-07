@@ -1,11 +1,13 @@
 import { useRef } from "react";
+import { Button } from "./ui/button";
+import { NavLink } from "react-router-dom";
 
 export default function Layout() {
     const gamesRef = useRef<HTMLDivElement | null>(null);
     return (
         <div className=" ">
             <div className="bg-[#65646A] text-white @container">
-                <div className=" max-w-7xl ml-auto mr-auto pt-2 pb-5  @container">
+                <div className="max-w-7xl ml-auto mr-auto pt-2 pb-5 pl-1 pr-1  @container">
                     <a className="inline-flex @[780px]:hidden font-bold mr-5">
                         Burger
                     </a>
@@ -21,11 +23,16 @@ export default function Layout() {
                     </a>
                     <a className="hidden @[780px]:inline-flexmr-5">Контакты</a>
                     <a className="float-right mt-3">
-                        <a className="mr-5">Связаться с нами</a>
-                        <a className="hidden @[780px]:inline-flex mr-5">
-                            Заказать звонок
+                        <a className="mr-5 ">
+                            <a className="">+7 (495) 223-89-86 </a> <br />
+                            <a className="">phonex@megatel.ru</a>
                         </a>
-                        <a className="inline-flex @[780px]:hidden mr-5">XD</a>
+                        <Button className="hidden @[780px]:inline-flex bg-white text-black outline outline-2 outline-lime-600">
+                            Заказать звонок
+                        </Button>
+                        <Button className="inline-flex @[780px]:hidden mr-5">
+                            XD
+                        </Button>
                     </a>
                 </div>
             </div>
@@ -390,10 +397,10 @@ export default function Layout() {
                 </div>
             </div>
 
-            <footer className="mt-12">
-                <div className="bg-[#009cf3]  w-full ">
+            <footer className="mt-12 ">
+                <div className="bg-[#36353A] max-w-7xl text-white  w-full ">
                     <li className="flex container justify-center"></li>
-
+                    <NavLink to="https:/google.com">ewhgwehgewhew</NavLink>
                     <div className="flex container justify-center">
                         <div className=" container justify-center">
                             <hr className="border-1 border-white"></hr>

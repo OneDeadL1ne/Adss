@@ -7,7 +7,7 @@ export default function Layout() {
     return (
         <div className=" ">
             <div className="bg-[#65646A] text-white @container">
-                <div className="max-w-7xl ml-auto mr-auto pt-2 pb-5 pl-1 pr-1  @container">
+                <div className="max-w-7xl ml-auto mr-auto pt-2 pb-5 pl-1 pr-1  @container mt-2">
                     <a className="inline-flex @[780px]:hidden font-bold mr-5">
                         Burger
                     </a>
@@ -22,17 +22,20 @@ export default function Layout() {
                         Портфолио
                     </a>
                     <a className="hidden @[780px]:inline-flexmr-5">Контакты</a>
-                    <a className="float-right mt-3">
-                        <a className="mr-5 ">
-                            <a className="">+7 (495) 223-89-86 </a> <br />
+                    <a className="float-right mt-[-1px]">
+                        <a className="mr-5">
+                            <a className="mb-[1px]">+7 (495) 223-89-86 </a>{" "}
+                            <br />
                             <a className="">phonex@megatel.ru</a>
                         </a>
-                        <Button className="hidden @[780px]:inline-flex bg-white text-black outline outline-2 outline-lime-600">
-                            Заказать звонок
-                        </Button>
-                        <Button className="inline-flex @[780px]:hidden mr-5">
-                            XD
-                        </Button>
+                        <div className="flex justify-end ml-40 mt-[-22px]">
+                            <Button className="mt-[-20px] hidden @[780px]:inline-flex bg-white text-black outline outline-2 outline-lime-600">
+                                Заказать звонок
+                            </Button>
+                            <Button className="mt-[-20px] inline-flex @[780px]:hidden mr-5">
+                                XD
+                            </Button>
+                        </div>
                     </a>
                 </div>
             </div>

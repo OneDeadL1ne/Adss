@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Button } from "./ui/button";
 import { NavLink } from "react-router-dom";
+import Footer from "./Footer";
 
 export default function Layout() {
     const gamesRef = useRef<HTMLDivElement | null>(null);
@@ -401,15 +402,7 @@ export default function Layout() {
             </div>
 
             <footer className="mt-12 ">
-                <div className="bg-[#36353A] max-w-7xl text-white  w-full ">
-                    <li className="flex container justify-center"></li>
-                    <NavLink to="https:/google.com">ewhgwehgewhew</NavLink>
-                    <div className="flex container justify-center">
-                        <div className=" container justify-center">
-                            <hr className="border-1 border-white"></hr>
-                        </div>
-                    </div>
-                </div>
+                <Footer />
             </footer>
         </div>
     );

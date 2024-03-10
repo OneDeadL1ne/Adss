@@ -4,7 +4,6 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 import { BurgerProps } from "./Layout";
 import { useState } from "react";
 import BurgerIcon from "@/assets/images/burger.svg?react";
-import Logo from "@/assets/icons/logo.svg?react";
 
 export function Burger({
 	links: { aboutRef, contactsRef, portfolioRef, serviceRef },
@@ -15,7 +14,9 @@ export function Burger({
 	return (
 		<Sheet onOpenChange={setOpen} open={open}>
 			<SheetTrigger asChild>
-				<BurgerIcon height={40} />
+				<div>
+					<BurgerIcon height={40} />
+				</div>
 			</SheetTrigger>
 			<SheetContent side="left" className="bg-[#36353A]">
 				<SheetHeader>

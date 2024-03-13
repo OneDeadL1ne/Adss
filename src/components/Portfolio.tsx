@@ -52,7 +52,7 @@ export default function Portfolio() {
 											</div>
 										</div>
 
-										<div className="flex justify-center gap-3 order-2">
+										<div className="flex justify-center gap-3 mt-2 order-2">
 											<img
 												src="/ksmess1.png"
 												className="max-h-[280px] @[900px]:max-h-[380px]"
@@ -70,7 +70,7 @@ export default function Portfolio() {
 									<div className="grid  @[900px]:grid-cols-2">
 										<div className="order-1 flex justify-center items-center">
 											<div>
-												<p className="text-wrap text-center @[900px]:text-start text-[27px] font-bold">
+												<p className="text-wrap  text-center @[900px]:text-start text-[27px] font-bold">
 													Мобильное приложение <br />
 													«Осталось до»
 												</p>
@@ -82,7 +82,7 @@ export default function Portfolio() {
 												</p>
 											</div>
 										</div>
-										<div className="flex justify-center gap-3 order-2">
+										<div className="flex justify-center gap-3 mt-2 order-2">
 											<img
 												src="/todo1.png"
 												className="max-h-[280px] @[900px]:max-h-[380px]"

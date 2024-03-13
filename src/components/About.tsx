@@ -20,7 +20,7 @@ export default function About({
 				/>
 
 				<div className="ml-[50px] mr-[50px] mt-[40px] @[800px]:ml-[100px] @[800px]:mr-[100px] @[800px]:mt-0 z-20">
-					<div className="grid grid-rows-3 z-20 gap-2 ">
+					<div className="grid @[900px]:grid-rows-3 z-20 gap-2 ">
 						<p className="text-[65px] text-center @[650px]:text-start font-extrabold ">
 							ADSSCODE
 						</p>

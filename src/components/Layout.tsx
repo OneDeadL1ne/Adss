@@ -33,8 +33,10 @@ export default function Layout() {
 			<header className="z-30 sticky top-0 bg-[#65646A] p-2  text-white @container">
 				<div className=" items-center @[800px]:ml-[100px] @[800px]:mr-[100px] @[800px]:mt-0 z-20 ">
 					<div className="float-start flex justify-start items-center">
-						<div className="inline-flex @[1100px]:hidden font-bold mr-5">
-							<Burger links={props} />
+						<div className="flex justify-center items-center @[1200px]:hidden  font-bold mr-5">
+							<div>
+								<Burger links={props} />
+							</div>
 						</div>
 						<a
 							href="/"
@@ -42,9 +44,9 @@ export default function Layout() {
 						>
 							ADSSCODE
 						</a>
-						<div className=" mr-auto  hidden @[1100px]:inline-flex">
+						<div className=" mr-auto  hidden @[1200px]:inline-flex">
 							<Button
-								className="text-[17px] mr-4 bg-transparent hover:bg-gray-400"
+								className="text-[17px] mr-4 bg-transparent  hidden @[1200px]:inline-flex hover:bg-gray-400"
 								onClick={() => {
 									aboutRef.current?.scrollIntoView({
 										behavior: "smooth",
@@ -74,7 +76,7 @@ export default function Layout() {
 								Портфолио
 							</Button>
 							<Button
-								className="text-[17px] mr-4 bg-transparent hover:bg-gray-400"
+								className="text-[17px] bg-transparent hover:bg-gray-400"
 								onClick={() => {
 									contactsRef.current?.scrollIntoView({
 										behavior: "smooth",
@@ -91,10 +93,10 @@ export default function Layout() {
 							<br />
 							+7(901)350-77-86
 						</p>
-						<Button className="hidden @[1100px]:inline-flex bg-white text-black outline outline-2 outline-lime-600 hover:bg-neutral-300">
+						<Button className="hidden @[1250px]:inline-flex bg-white text-black outline outline-2 outline-lime-600 hover:bg-neutral-300">
 							Заказать звонок
 						</Button>
-						<Button className="inline-flex @[1100px]:hidden mr-5 h-14 w-14 rounded-full bg-white  hover:bg-neutral-300">
+						<Button className="inline-flex @[1250px]:hidden  h-14 w-14 rounded-full bg-white  hover:bg-neutral-300">
 							<Phone color="black" fill="black" strokeWidth={0.1} />
 						</Button>
 					</div>

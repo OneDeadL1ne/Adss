@@ -15,7 +15,7 @@ export function Burger({
 		<Sheet onOpenChange={setOpen} open={open}>
 			<SheetTrigger asChild>
 				<div>
-					<BurgerIcon height={40} />
+					<BurgerIcon height={50} />
 				</div>
 			</SheetTrigger>
 			<SheetContent side="left" className="bg-[#36353A]">

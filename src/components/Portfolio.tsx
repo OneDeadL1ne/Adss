@@ -39,15 +39,17 @@ export default function Portfolio() {
 							<CarouselItem key={1}>
 								<div className="flex h-full items-center justify-center">
 									<div className="grid  @[900px]:grid-cols-2">
-										<div className="order-1 justify-center ">
-											<p className="text-wrap text-center @[900px]:text-start text-[27px] font-bold">
-												Мобильное <br />
-												приложение «KSMess»
-											</p>
-											<p className="w-[300px] text-wrap text-center">
-												Социальная сеть для колледжа с чатами, новостной
-												лентой и актуальным расписанием занятий.
-											</p>
+										<div className="order-1 flex justify-center items-center">
+											<div>
+												<p className="text-wrap text-center @[900px]:text-start text-[27px] font-bold">
+													Мобильное <br />
+													приложение «KSMess»
+												</p>
+												<p className="w-[300px] text-wrap text-center  @[900px]:text-start">
+													Социальная сеть для колледжа с чатами, новостной
+													лентой и актуальным расписанием занятий.
+												</p>
+											</div>
 										</div>
 
 										<div className="flex justify-center gap-3 order-2">
@@ -66,16 +68,19 @@ export default function Portfolio() {
 							<CarouselItem key={2}>
 								<div className="flex h-full items-center justify-center">
 									<div className="grid  @[900px]:grid-cols-2">
-										<div className="order-1 justify-center ">
-											<p className="text-wrap text-center @[900px]:text-start text-[27px] font-bold">
-												Мобильное приложение <br />
-												«Осталось до»
-											</p>
-											<p className="w-[300px] text-wrap text-center">
-												Мобильное приложение позволяет отслеживать все свои
-												важные события: отпуск, день рождения, годовщину,
-												окончание учебы, концерт и многое другое.
-											</p>
+										<div className="order-1 flex justify-center items-center">
+											<div>
+												<p className="text-wrap text-center @[900px]:text-start text-[27px] font-bold">
+													Мобильное приложение <br />
+													«Осталось до»
+												</p>
+												<p className="w-[300px] text-wrap text-center  @[900px]:text-start">
+													Мобильное приложение позволяет отслеживать все
+													свои важные события: отпуск, день рождения,
+													годовщину, окончание учебы, концерт и многое
+													другое.
+												</p>
+											</div>
 										</div>
 										<div className="flex justify-center gap-3 order-2">
 											<img

@@ -42,7 +42,10 @@ export function ContactsForm() {
 
 	return (
 		<Form {...form}>
-			<form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
+			<form
+				onSubmit={form.handleSubmit(onSubmit)}
+				className="w-3/4 @[900px]:w-5/6 @[1200px]:w-2/3 space-y-4"
+			>
 				<FormField
 					control={form.control}
 					name="name"
@@ -50,7 +53,11 @@ export function ContactsForm() {
 						<FormItem>
 							<FormLabel>Ваше Имя</FormLabel>
 							<FormControl>
-								<Input placeholder="Иван" {...field} />
+								<Input
+									placeholder="Иван"
+									className="bg-[#4B4B4B] text-white ring-red-400 border-transparent  "
+									{...field}
+								/>
 							</FormControl>
 
 							<FormMessage />
@@ -64,7 +71,11 @@ export function ContactsForm() {
 						<FormItem>
 							<FormLabel>Email</FormLabel>
 							<FormControl>
-								<Input placeholder="mail@mail.com" {...field} />
+								<Input
+									placeholder="mail@mail.com"
+									className="bg-[#4B4B4B] text-white ring-red-400 border-transparent  "
+									{...field}
+								/>
 							</FormControl>
 
 							<FormMessage />
@@ -79,8 +90,8 @@ export function ContactsForm() {
 							<FormLabel>Сообщение</FormLabel>
 							<FormControl>
 								<Textarea
-									className="resize-none"
 									placeholder="Напишите, о чем хотите узнать"
+									className="bg-[#4B4B4B] text-white ring-red-400 border-transparent  resize-none"
 									{...field}
 								/>
 							</FormControl>
@@ -89,7 +100,9 @@ export function ContactsForm() {
 						</FormItem>
 					)}
 				/>
-				<Button type="submit">Отправить сообщение</Button>
+				<Button type="submit" className="w-full bg-white text-black hover:bg-neutral-500">
+					Отправить сообщение
+				</Button>
 			</form>
 		</Form>
 	);

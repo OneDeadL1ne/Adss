@@ -34,7 +34,7 @@ export default function Portfolio() {
 					<div>
 						<p className="text-center font-bold text-[60px]">Портфолио</p>
 					</div>
-					<Carousel className=" max-w-6xl" setApi={setApi}>
+					<Carousel className="w-full max-w-6xl" setApi={setApi}>
 						<CarouselContent className="p-4">
 							<CarouselItem key={1}>
 								<div className="flex h-full items-center justify-center">
@@ -102,8 +102,8 @@ export default function Portfolio() {
 								<div
 									className={
 										First
-											? `bg-white text-transparent h-[14px] w-[32px]  rounded-full duration-300`
-											: `bg-[#A8ABAF] text-transparent h-[14px] w-[14px]  rounded-full duration-300`
+											? `bg-white text-transparent h-[10px] w-[32px] select-none rounded-full duration-300`
+											: `bg-[#A8ABAF] text-transparent h-[10px] w-[10px] select-none rounded-full duration-300`
 									}
 								>
 									1
@@ -111,8 +111,8 @@ export default function Portfolio() {
 								<div
 									className={
 										Second
-											? `bg-white text-transparent h-[14px] w-[32px]  rounded-full duration-300`
-											: `bg-[#A8ABAF] text-transparent h-[14px] w-[14px]  rounded-full duration-300`
+											? `bg-white text-transparent h-[10px] w-[32px] select-none  rounded-full duration-300`
+											: `bg-[#A8ABAF] text-transparent h-[10px] w-[10px]  select-none rounded-full duration-300`
 									}
 								>
 									1

@@ -24,14 +24,14 @@ export function Burger({
 						<SheetTitle className="flex w-full">
 							<a className="text-white text-3xl font-bold">ADSSCODE</a>
 						</SheetTitle>
-						<div className="bg-[#A8ABAF] text-transparent h-[1px] select-none mt-1 mb-1 ">
+						<div className="bg-[#3E3E40] text-transparent h-[1px] select-none mt-1 mb-1 ">
 							1
 						</div>
 					</div>
 				</SheetHeader>
 				<div className="grid grid-rows-4 gap-2 mt-3">
 					<Button
-						className=""
+						className="bg-[#3E3E40] active:bg-[#A8ABAF] text-white border-transparent "
 						variant="outline"
 						onClick={() => {
 							aboutRef.current?.scrollIntoView({
@@ -43,7 +43,8 @@ export function Burger({
 						<span className="flex w-full">О нас</span>
 					</Button>
 					<Button
-						className=""
+						className="bg-[#3E3E40] active:bg-[#A8ABAF] text-white border-transparent"
+						variant="outline"
 						onClick={() => {
 							serviceRef.current?.scrollIntoView({
 								behavior: "smooth",
@@ -54,7 +55,8 @@ export function Burger({
 						<span className="flex w-full">Наши услуги</span>
 					</Button>
 					<Button
-						className=""
+						className="bg-[#3E3E40] active:bg-[#A8ABAF] text-white border-transparent"
+						variant="outline"
 						onClick={() => {
 							portfolioRef.current?.scrollIntoView({
 								behavior: "smooth",
@@ -65,7 +67,8 @@ export function Burger({
 						<span className="flex w-full">Портфолио</span>
 					</Button>
 					<Button
-						className=""
+						className="bg-[#3E3E40] active:bg-[#A8ABAF] text-white border-transparent "
+						variant="outline"
 						onClick={() => {
 							contactsRef.current?.scrollIntoView({
 								behavior: "smooth",

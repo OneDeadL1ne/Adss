@@ -7,10 +7,10 @@ export default function Footer() {
 			<div className="text-center">
 				<Button
 					size="icon"
-					className="h-[47px] w-[47px] hover:bg-white  bg-white rounded-full"
+					className="h-[47px] w-[47px] hover:bg-white  bg-white rounded-full "
 				>
 					<a href="https://t.me/AdSSCode" target="_blank">
-						<Telegram height={32} />
+						<Telegram height={37} />
 					</a>
 				</Button>
 

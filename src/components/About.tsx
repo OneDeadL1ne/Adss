@@ -24,6 +24,7 @@ export default function About({
 						<p className="text-[65px] text-center @[650px]:text-start font-extrabold ">
 							ADSSCODE
 						</p>
+
 						<p className="text-wrap  text-[20px] ">
 							Увеличиваем долю рынка, улучшаем сервис, повышаем лояльность и продажи,
 							снижаем расходы за счет автоматизации бизнес-процессов с помощью

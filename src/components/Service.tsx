@@ -108,7 +108,7 @@ export default function Service({
 									</div>
 								</div>
 							</TabsContent>
-							<TabsContent className="w-full mb-3" value="technology">
+							<TabsContent className="w-full mb-3 @[900px]:mb-0" value="technology">
 								<div className="p-4  gap-6 grid grid-rows-2 grid-cols-2 @[600px]:grid-cols-4 @[600px]:grid-rows-1 @[600px]:gap-10 @[900px]:grid-cols-5 @[900px]:grid-rows-1 @[900px]:gap-20">
 									<div className="inline-block ">
 										<div className="flex justify-center">

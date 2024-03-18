@@ -21,11 +21,11 @@ export default function Service({
 	};
 	return (
 		<div className="@container   ">
-			<div className="bg-[#65646A] text-white scroll-mt-[1000px] flex justify-center h-full @[900px]:h-screen">
-				<div className="flex justify-center items-center h-full max-w-[2300px]">
+			<div className="bg-[#65646A] text-white  flex justify-center  h-full @[900px]:h-screen">
+				<div className="flex justify-center items-start max-w-[1300px]">
 					<Tabs
 						defaultValue="service"
-						className="w-full h-full mr-[50px] ml-[50px] @[900px]mr-[100px] @[900px]ml-[100px]"
+						className="@[900px]:w-[900px] @[1200px]:w-[2000px]"
 					>
 						<div className="mr-1 ml-1 mt-5">
 							<TabsList className="grid w-full grid-cols-2  ">

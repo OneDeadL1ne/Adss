@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
-import { Scroll } from "lucide-react";
 
 const FormSchema = z.object({
 	name: z.string().min(1, {

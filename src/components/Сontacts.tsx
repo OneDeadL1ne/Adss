@@ -3,7 +3,7 @@ import { ContactsForm } from "./ContactsForm";
 export default function Сontacts() {
 	return (
 		<div className="@container">
-			<div className="w-full text-white ml-[50px] mr-[50px] mt-[40px] @[800px]:ml-[100px] @[800px]:mr-[100px] @[800px]:mt-0">
+			<div className="w-full flex justify-center items-center text-white ml-[50px] mr-[50px] mt-[40px] @[800px]:ml-[100px] @[800px]:mr-[100px] @[800px]:mt-0 ">
 				<div className="@[1200px]:flex w-full @[1200px]:justify-center @[1200px]:items-center">
 					<div className="grid @[1200px]:grid-cols-2 @[1200px]:gap-10">
 						<div className="w-full">
@@ -21,7 +21,7 @@ export default function Сontacts() {
 								</div>
 								<div className="flex items-start justify-start gap-3">
 									<p>Телефон: </p>
-									<p>+7(901)350-77-86</p>
+									<a href="tel:+7(901)350-77-86">+7(901)350-77-86</a>
 								</div>
 								<div className="flex items-start justify-start gap-3">
 									<p>Telegram: </p>

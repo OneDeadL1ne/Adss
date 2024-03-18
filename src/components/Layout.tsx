@@ -3,7 +3,6 @@ import { Button } from "./ui/button";
 import Footer from "./Footer";
 import { Burger } from "./Burger";
 import About from "./About";
-import { Phone } from "lucide-react";
 import Service from "./Service";
 import Portfolio from "./Portfolio";
 import Сontacts from "./Сontacts";
@@ -92,7 +91,7 @@ export default function Layout() {
 						<p className="mr-5 ">
 							Связаться с нами
 							<br />
-							+7(901)350-77-86
+							<a href="tel:+7(901)350-77-86">+7(901)350-77-86</a>
 						</p>
 						<OrderDialog />
 					</div>

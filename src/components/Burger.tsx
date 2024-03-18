@@ -14,19 +14,25 @@ export function Burger({
 	return (
 		<Sheet onOpenChange={setOpen} open={open}>
 			<SheetTrigger asChild>
-				<div>
-					<BurgerIcon height={50} />
+				<div className="p-2">
+					<BurgerIcon height={40} />
 				</div>
 			</SheetTrigger>
-			<SheetContent side="left" className="bg-[#36353A]">
+			<SheetContent side="left" className="bg-[#36353A] border-r-transparent">
 				<SheetHeader>
-					<SheetTitle>
-						<a className=" text-3xl font-bold mr-5">ADSSCODE</a>
-					</SheetTitle>
+					<div>
+						<SheetTitle className="flex w-full">
+							<a className="text-white text-3xl font-bold">ADSSCODE</a>
+						</SheetTitle>
+						<div className="bg-[#A8ABAF] text-transparent h-[1px] select-none mt-1 mb-1 ">
+							1
+						</div>
+					</div>
 				</SheetHeader>
-				<div className="grid grid-rows-4 ">
+				<div className="grid grid-rows-4 gap-2 mt-3">
 					<Button
 						className=""
+						variant="outline"
 						onClick={() => {
 							aboutRef.current?.scrollIntoView({
 								behavior: "smooth",
@@ -34,7 +40,7 @@ export function Burger({
 							setOpen(false);
 						}}
 					>
-						О нас
+						<span className="flex w-full">О нас</span>
 					</Button>
 					<Button
 						className=""
@@ -45,7 +51,7 @@ export function Burger({
 							setOpen(false);
 						}}
 					>
-						Наши услуги
+						<span className="flex w-full">Наши услуги</span>
 					</Button>
 					<Button
 						className=""
@@ -56,7 +62,7 @@ export function Burger({
 							setOpen(false);
 						}}
 					>
-						Портфолио
+						<span className="flex w-full">Портфолио</span>
 					</Button>
 					<Button
 						className=""
@@ -67,7 +73,7 @@ export function Burger({
 							setOpen(false);
 						}}
 					>
-						Контакты
+						<span className="flex w-full">Контакты</span>
 					</Button>
 				</div>
 			</SheetContent>

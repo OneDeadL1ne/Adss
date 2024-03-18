@@ -18,11 +18,11 @@ export default function Service({
 	};
 	return (
 		<div className="@container">
-			<div className="bg-[#65646A] text-white  flex justify-center">
-				<div className="flex justify-center items-center max-w-[1300px]">
+			<div className="bg-[#65646A] text-white  flex justify-center ">
+				<div className="flex justify-center  max-w-[1300px]">
 					<Tabs
 						defaultValue="account"
-						className="@[900px]:w-[900px] @[1200px]:w-[2000px]"
+						className=" @[900px]:w-[900px] @[1200px]:w-[2000px]"
 					>
 						<TabsList className="grid @[1200px]:w-full grid-cols-2  ">
 							<TabsTrigger
@@ -42,7 +42,7 @@ export default function Service({
 						<div className="">
 							<TabsContent value="account" className="w-full">
 								<div className="grid grid-rows-3 @[900px]:grid-cols-3 @[900px]:grid-rows-1 ">
-									<div className="text-center max-w-[500px] @[900px]:mr-10">
+									<div className="text-center  max-w-[500px] @[900px]:mr-10">
 										<p className="font-bold text-2xl mt-2 mb-2">
 											Разработка с нуля под ключ
 										</p>

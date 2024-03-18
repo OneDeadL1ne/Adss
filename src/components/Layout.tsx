@@ -31,10 +31,10 @@ export default function Layout() {
 	return (
 		<div className="flex flex-col min-h-screen bg-[#36353A]  ">
 			<header className="z-30 sticky top-0 bg-[#65646A] p-2  text-white @container">
-				<div className=" items-center @[800px]:ml-[100px] @[800px]:mr-[100px] @[800px]:mt-0 z-20 ">
-					<div className="float-start flex justify-start items-center">
+				<div className="items-center @[800px]:ml-[100px] @[800px]:mr-[100px] @[800px]:mt-0 z-20 ">
+					<div className="h-full float-start flex justify-start items-center">
 						<div className="flex justify-center items-center @[1200px]:hidden  font-bold mr-5">
-							<div>
+							<div className="">
 								<Burger links={props} />
 							</div>
 						</div>
@@ -118,14 +118,14 @@ export default function Layout() {
 					<About contactsRef={contactsRef} />
 				</div>
 
-				<div ref={serviceRef} id="service" className="scroll-mt-[70px] ">
+				<div ref={serviceRef} id="service" className="scroll-mt-[70px]">
 					<Service contactsRef={contactsRef} />
 				</div>
-				<div ref={portfolioRef} id="portfolio" className="scroll-mt-[70px]">
+				<div ref={portfolioRef} id="portfolio" className="scroll-mt-[70px] ">
 					<Portfolio />
 				</div>
 
-				<div ref={contactsRef} id="contacts" className="scroll-mt-[70px]">
+				<div ref={contactsRef} id="contacts" className="scroll-mt-[70px] ">
 					<Сontacts />
 				</div>
 			</main>

@@ -7,6 +7,7 @@ import { Phone } from "lucide-react";
 import Service from "./Service";
 import Portfolio from "./Portfolio";
 import Сontacts from "./Сontacts";
+import { OrderDialog } from "./OrderDialog";
 
 export interface BurgerProps {
 	aboutRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -93,12 +94,7 @@ export default function Layout() {
 							<br />
 							+7(901)350-77-86
 						</p>
-						<Button className="hidden @[1250px]:inline-flex bg-white text-black outline outline-2 outline-lime-600 hover:bg-neutral-300">
-							Заказать звонок
-						</Button>
-						<Button className="inline-flex @[1250px]:hidden  h-14 w-14 rounded-full bg-white  hover:bg-neutral-300">
-							<Phone color="black" fill="black" strokeWidth={0.1} />
-						</Button>
+						<OrderDialog />
 					</div>
 				</div>
 			</header>
